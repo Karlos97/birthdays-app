@@ -1,18 +1,14 @@
 import React from 'react';
-import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
-import BooksList from './components/booksList/BooksList';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import RiddleList from './components/RiddleList/RiddleList';
 import Layout from './components/Layout/Layout';
-import {
-  appNamePathUsedInRouting,
-  bookDetailsPathUsedInRouting,
-} from './config/config';
 
 const App = () => (
   <BrowserRouter>
     <Layout>
       <Switch>
         <Route path="/" exact>
-          <BooksList />
+          <RiddleList />
         </Route>
       </Switch>
     </Layout>

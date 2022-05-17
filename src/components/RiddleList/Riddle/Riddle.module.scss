@@ -1,5 +1,5 @@
 $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-@mixin book-title {
+@mixin riddle-title {
   display: block;
   margin: 1rem 0 0.5rem 3rem;
   height: 1rem;
@@ -8,7 +8,7 @@ $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-weight: bold;
 }
 
-.book {
+.riddle {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,14 +27,6 @@ $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-// body {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-//   background: #060505;
-// }
 
 .button {
   position: relative;

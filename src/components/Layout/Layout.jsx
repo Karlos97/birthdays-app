@@ -11,8 +11,8 @@ const Layout = ({ children }) => {
   const isMainpage = pathname === '/';
 
   const mainElementClass = !isMainpage
-    ? classes['book-list']
-    : classes['book-details'];
+    ? classes['riddle-list']
+    : classes['riddle-details'];
 
   return (
     <>

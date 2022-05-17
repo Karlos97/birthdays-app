@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import classes from './Book.module.scss';
+import classes from './Riddle.module.scss';
 
-const Book = ({
+const Riddle = ({
   question = "What's green, black and is not ginger?",
   answer = 'a',
   reward = 'a',
@@ -21,10 +20,10 @@ const Book = ({
   };
 
   return (
-    <li className={classes.book}>
+    <li className={classes.riddle}>
       {!firstRender && (
         <p
-          className={classes['book-top-subtitle']}
+          className={classes['riddle-top-subtitle']}
           style={{ color: `${isCorrectAnswer ? 'green' : 'red'}` }}
         >
           {`${isCorrectAnswer ? 'CORRECT!' : 'WRONG!'}`}
@@ -32,13 +31,13 @@ const Book = ({
       )}
       {isCorrectAnswer && (
         <p
-          className={classes['book-top-subtitle']}
+          className={classes['riddle-top-subtitle']}
           style={{ color: `${isCorrectAnswer ? 'green' : 'red'}` }}
         >
           {reward}
         </p>
       )}
-      <p className={classes['book-top-subtitle']}>{question}</p>
+      <p className={classes['riddle-top-subtitle']}>{question}</p>
 
       <input
         className={classes['input']}
@@ -56,4 +55,4 @@ const Book = ({
   );
 };
 
-export default Book;
+export default Riddle;

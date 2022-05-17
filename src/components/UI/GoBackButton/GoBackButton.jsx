@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { HiArrowNarrowLeft } from 'react-icons/hi';
-import classes from './GoBackToBooksListButton.module.scss';
+import classes from './GoBackButton.module.scss';
 
-const GoBackToBooksListButton = () => (
+const GoBackButton = () => (
   <>
     <NavLink
       to="/"
@@ -16,4 +16,4 @@ const GoBackToBooksListButton = () => (
   </>
 );
 
-export default GoBackToBooksListButton;
+export default GoBackButton;

@@ -1,10 +1,10 @@
 import React from 'react';
-import GoBackToBooksListButton from '../../UI/GoBackToBookList/GoBackToBooksListButton';
+import GoBackButton from '../../UI/GoBackButton/GoBackButton';
 import classes from './MainNavigation.module.scss';
 
 const MainNavigation = () => (
   <nav className={classes.nav}>
-    <GoBackToBooksListButton />
+    <GoBackButton />
   </nav>
 );
 
