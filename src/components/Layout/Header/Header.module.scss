@@ -1,0 +1,19 @@
+.app-header {
+  margin: 0;
+  background-color: #2ea3f2;
+
+  &-block {
+    border-bottom: 1px solid #ced4da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-logo {
+      &-name {
+        font-size: 2.5rem;
+        color: black;
+        font-family: 'Andada Pro', serif;
+      }
+    }
+  }
+}
