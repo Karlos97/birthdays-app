@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/birthdays-app/static/css/main.033b1fe9.chunk.css",
-    "main.js": "/birthdays-app/static/js/main.b1bf17a0.chunk.js",
-    "main.js.map": "/birthdays-app/static/js/main.b1bf17a0.chunk.js.map",
+    "main.css": "/birthdays-app/static/css/main.28844bb1.chunk.css",
+    "main.js": "/birthdays-app/static/js/main.d8fc9a3b.chunk.js",
+    "main.js.map": "/birthdays-app/static/js/main.d8fc9a3b.chunk.js.map",
     "runtime-main.js": "/birthdays-app/static/js/runtime-main.3cfc64f1.js",
     "runtime-main.js.map": "/birthdays-app/static/js/runtime-main.3cfc64f1.js.map",
-    "static/js/2.1a828b9b.chunk.js": "/birthdays-app/static/js/2.1a828b9b.chunk.js",
-    "static/js/2.1a828b9b.chunk.js.map": "/birthdays-app/static/js/2.1a828b9b.chunk.js.map",
+    "static/js/2.c5fee43b.chunk.js": "/birthdays-app/static/js/2.c5fee43b.chunk.js",
+    "static/js/2.c5fee43b.chunk.js.map": "/birthdays-app/static/js/2.c5fee43b.chunk.js.map",
     "index.html": "/birthdays-app/index.html",
-    "static/css/main.033b1fe9.chunk.css.map": "/birthdays-app/static/css/main.033b1fe9.chunk.css.map",
-    "static/js/2.1a828b9b.chunk.js.LICENSE.txt": "/birthdays-app/static/js/2.1a828b9b.chunk.js.LICENSE.txt"
+    "static/css/main.28844bb1.chunk.css.map": "/birthdays-app/static/css/main.28844bb1.chunk.css.map",
+    "static/js/2.c5fee43b.chunk.js.LICENSE.txt": "/birthdays-app/static/js/2.c5fee43b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3cfc64f1.js",
-    "static/js/2.1a828b9b.chunk.js",
-    "static/css/main.033b1fe9.chunk.css",
-    "static/js/main.b1bf17a0.chunk.js"
+    "static/js/2.c5fee43b.chunk.js",
+    "static/css/main.28844bb1.chunk.css",
+    "static/js/main.d8fc9a3b.chunk.js"
   ]
 }
