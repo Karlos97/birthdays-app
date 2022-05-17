@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/birthdays-app/static/css/main.28844bb1.chunk.css",
-    "main.js": "/birthdays-app/static/js/main.d8fc9a3b.chunk.js",
-    "main.js.map": "/birthdays-app/static/js/main.d8fc9a3b.chunk.js.map",
+    "main.js": "/birthdays-app/static/js/main.495c38c9.chunk.js",
+    "main.js.map": "/birthdays-app/static/js/main.495c38c9.chunk.js.map",
     "runtime-main.js": "/birthdays-app/static/js/runtime-main.3cfc64f1.js",
     "runtime-main.js.map": "/birthdays-app/static/js/runtime-main.3cfc64f1.js.map",
     "static/js/2.c5fee43b.chunk.js": "/birthdays-app/static/js/2.c5fee43b.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.3cfc64f1.js",
     "static/js/2.c5fee43b.chunk.js",
     "static/css/main.28844bb1.chunk.css",
-    "static/js/main.d8fc9a3b.chunk.js"
+    "static/js/main.495c38c9.chunk.js"
   ]
 }
