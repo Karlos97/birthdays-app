@@ -7,7 +7,7 @@ const App = () => (
   <BrowserRouter>
     <Layout>
       <Switch>
-        <Route path="/" exact>
+        <Route path="/birthdays-app/" exact>
           <RiddleList />
         </Route>
       </Switch>

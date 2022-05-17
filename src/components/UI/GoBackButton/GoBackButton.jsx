@@ -6,7 +6,7 @@ import classes from './GoBackButton.module.scss';
 const GoBackButton = () => (
   <>
     <NavLink
-      to="/"
+      to="/birthdays-app/"
       activeClassName={classes.link.active}
       className={classes.link}
     >

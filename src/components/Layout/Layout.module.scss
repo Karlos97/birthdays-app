@@ -1,21 +1,10 @@
-@mixin flex-options {
-  display: flex;
-  justify-content: center;
-}
-
 .app {
   overflow-y: scroll;
   height: 100vh;
 }
 
-.riddle {
-  &-list {
-    margin-top: 3rem;
-    @include flex-options;
-  }
-
-  &-details {
-    margin-top: 2rem;
-    @include flex-options;
-  }
+.riddle-details {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }

@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   const { pathname } = useLocation();
   const listInnerRef = useRef();
 
-  const isMainpage = pathname === '/';
+  const isMainpage = pathname === '/birthdays-app/';
 
   const mainElementClass = !isMainpage
     ? classes['riddle-list']

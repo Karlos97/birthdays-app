@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 @mixin riddle-title {
   display: block;
@@ -24,9 +25,9 @@ $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 .input {
   width: 40%;
+  border-radius: 5px;
+  height: 1.3rem;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .button {
   position: relative;

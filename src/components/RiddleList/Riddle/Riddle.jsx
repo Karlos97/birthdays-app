@@ -12,7 +12,7 @@ const Riddle = ({
 
   const checkAnswer = () => {
     setFirstRender(false);
-    if (userAnswer.toLowerCase === answer.toLowerCase) {
+    if (userAnswer.toLowerCase() === answer.toLowerCase()) {
       setIsCorrectAnswer(true);
     } else {
       setIsCorrectAnswer(false);
@@ -44,12 +44,21 @@ const Riddle = ({
         onChange={(e) => setUserAnswer(e.target.value)}
       />
 
-      <div className={classes['button']} onClick={() => checkAnswer()}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Check!
+      <div>
+        <div className={classes['button']} onClick={setIsCorrectAnswer}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Get answer now!
+        </div>
+        <div className={classes['button']} onClick={() => checkAnswer()}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Check!
+        </div>
       </div>
     </li>
   );
