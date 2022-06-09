@@ -7,51 +7,64 @@ const Riddle = ({
   reward = 'a',
 }) => {
   const [userAnswer, setUserAnswer] = useState('');
-  const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
-  const [firstRender, setFirstRender] = useState(true);
+  const [isAnswer, setIsAnswer] = useState({ label: '', value: false });
+  const [firstAnswer, setFirstAnswer] = useState(true);
+  const isPhraseCorrect = (phrase) => !!/^[a-zA-Z ]+$/.test(phrase);
 
   const checkAnswer = () => {
-    setFirstRender(false);
+    setFirstAnswer(false);
+    if (!isPhraseCorrect(userAnswer))
+      return setIsAnswer({ label: "Don't use Polish signs!", value: false });
+
     if (userAnswer.toLowerCase() === answer.toLowerCase()) {
-      setIsCorrectAnswer(true);
+      setIsAnswer({ label: 'CORRECT!', value: true });
     } else {
-      setIsCorrectAnswer(false);
+      setIsAnswer({ label: 'WRONG!', value: false });
     }
   };
 
   return (
-    <li className={classes.riddle}>
-      {!firstRender && (
-        <p
-          className={classes['riddle-top-subtitle']}
-          style={{ color: `${isCorrectAnswer ? 'green' : 'red'}` }}
-        >
-          {`${isCorrectAnswer ? 'CORRECT!' : 'WRONG!'}`}
-        </p>
-      )}
-      {isCorrectAnswer && (
-        <p
-          className={classes['riddle-top-subtitle']}
-          style={{ color: `${isCorrectAnswer ? 'green' : 'red'}` }}
-        >
-          {reward}
-        </p>
-      )}
-      <p className={classes['riddle-top-subtitle']}>{question}</p>
+    <div className={classes['riddle-wrapper']}>
+      <div
+        className={`${classes['button']} ${classes['button-answer']}`}
+        onClick={() =>
+          setIsAnswer({
+            label:
+              'Oj Ty kolego chyba chodziles bardziej na A a aaautomatyke niz robotyke :)',
+            value: true,
+          })
+        }
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Solution
+      </div>
+      <li className={classes.riddle}>
+        {(!firstAnswer || isAnswer.value) && (
+          <p
+            className={classes['riddle-top-subtitle']}
+            style={{ color: `${isAnswer.value ? 'green' : 'red'}` }}
+          >
+            {isAnswer?.label}
+          </p>
+        )}
+        {isAnswer?.value && (
+          <p
+            className={classes['riddle-top-subtitle']}
+            style={{ color: `${isAnswer?.value ? 'green' : 'red'}` }}
+          >
+            {reward}
+          </p>
+        )}
+        <p className={classes['riddle-top-subtitle']}>{question}</p>
 
-      <input
-        className={classes['input']}
-        onChange={(e) => setUserAnswer(e.target.value)}
-      />
+        <input
+          className={classes['input']}
+          onChange={(e) => setUserAnswer(e.target.value)}
+        />
 
-      <div>
-        <div className={classes['button']} onClick={setIsCorrectAnswer}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Get answer now!
-        </div>
         <div className={classes['button']} onClick={() => checkAnswer()}>
           <span></span>
           <span></span>
@@ -59,8 +72,8 @@ const Riddle = ({
           <span></span>
           Check!
         </div>
-      </div>
-    </li>
+      </li>
+    </div>
   );
 };
 
